@@ -19,7 +19,7 @@ func main() {
 	runAction()
 
 	// 2. Set up the hourly loop until the end of the day
-	ticker := time.NewTicker(1 * time.Hour)
+	ticker := time.NewTicker(10 * time.Second)
 	defer ticker.Stop()
 
 	// The target stop time (00:00 of the next day)
